@@ -95,7 +95,6 @@ class Account:
     def last_name(self, value):
         self.validate_and_set_name('_last_name', value, 'Last Name')
         
-    # also going to create a full_name computed property, for ease of use
     @property
     def full_name(self):
         return f'{self.first_name} {self.last_name}'
